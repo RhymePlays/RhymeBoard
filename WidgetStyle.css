@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background: #151515;
+    color: #F3F3F3;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Global */
+.RadialButton{
+    background: #505050;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 100ms;
+}
+.RadialButton:hover{
+    filter: brightness(0.8);
+    transition: filter 150ms;
+}
+
+/* Counter Widget */
+.CounterWidgetBG{
+    width: 400px;
+    background: #303030;
+    border-radius: 15px;
+    margin: 10px;
+}
+.CounterWidgetNote{
+    background: #505050;
+    border-radius: 15px 15px 0px 0px;
+    transition: filter 100ms;
+}.CounterWidgetNote:hover{filter: brightness(0.9);transition: filter 150ms;}
+.CounterWidgetCounterPart{
+    display: flex;
+    align-items: center;
+}
+.CounterWidgetDisplay{
+    padding: 15px;
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
+}
+.CounterWidgetAdd{background: #25FFB1;}.CounterWidgetAdd svg{fill: #303030;}
+.CounterWidgetSub{background: #FB1E46;}.CounterWidgetSub svg{fill: #F3F3F3;}
+
+/* Note Widget */
+.NoteWidgetBG{
+    width: 400px;
+    background: #303030;
+    border-radius: 15px;
+    margin: 10px;
+}
+.NoteWidgetText{padding: 15px;transition: color 100ms;}
+.NoteWidgetText:focus{outline-width: 0;color: #dadada;transition: color 150ms;}
